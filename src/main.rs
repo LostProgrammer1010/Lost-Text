@@ -1,10 +1,12 @@
 #![warn(clippy::all, clippy::pedantic)]
 mod editor;
+mod terminal;
 
 use editor::Editor;
+pub use terminal::Terminal;
 
 fn main() {
 
-    let editor = Editor::defualt();
-    editor.run();
+    Editor::defualt().run();
+    
 }
